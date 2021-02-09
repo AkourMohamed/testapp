@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <!-- <app-sidebar [ngClass]="{collapsed: !isOpen}"></app-sidebar> -->
+  <app-sidebar [isOpen]="isOpen"></app-sidebar>
+  <div class="main">
+      <app-header (SideBarStatus)="toggleSidebar($event)"></app-header>
+      <div class="container-fluid">
+          <!-- <router-outlet></router-outlet> -->
+      </div>
+  </div>
+</div>
